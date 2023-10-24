@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/00cd4e4c80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/settings.css">
+    <title>Block Stack</title>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="start">
+        <h1>Stack it!</h1>
+        <button id="play">Play</button>
+    </div>
+    <div class="score">
+        <h2>
+            <div>Score: <span id="score">00</span></div>
+            <div>Best: <span id="best">00</span></div>
+        </h2>
+    </div>
+
+    <div class="settingsBtn" id="settingsBtn"><i class="fas fa-cog"></i></div>
+    <div class="overlay">
+        <div class="container">
+            <!-- title -->
+            <h2>Settings<span><i class="fas fa-window-close" id="close"></i></span></h2> 
+            <!-- levles -->
+            <form id="settings-form">
+                <div class="select">
+                    <label for="difficulty">Difficulty</label>
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            </form>
+            <!-- reset button -->
+            <button class="resetBtn" id="resetBtn">Reset Best Scrore</button>
+            <!--  -->
+        </div>
+    </div>
+
+    <script src="./sripts/box.js"></script>
+    <script src="./sripts/main.js"></script>
+    <script src="./sripts/settigns.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
